@@ -46,7 +46,15 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                for(int loop = 0; loop < layoutview1.getChildCount(); loop++) {
+                    //this is the code in question and where I want to get the text from
+                    //all my EditTexts
+                    TextView inner = (TextView) layoutview1.getChildAt(loop);
+                    int a = Integer.parseInt(String.format("%s",editText1.getText()));
+                    inner.setText(String.format("%s * %s = %s",a,loop+1,(loop+1)*a));
 
+
+                }
             }
         });
 
