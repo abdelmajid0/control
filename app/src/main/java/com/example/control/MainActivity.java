@@ -14,7 +14,7 @@ import java.util.TreeSet;
 
 public class MainActivity extends AppCompatActivity {
     TextView editText1;
-    Button btn1,btn2,btn3;
+    Button btn1,btn2,btn3,buttonColor1,buttonColor2,buttonColor3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         btn2 = findViewById(R.id.button2);
         btn3 = findViewById(R.id.button3);
         editText1 = findViewById(R.id.editText1);
+        buttonColor1 = findViewById(R.id.buttonColor1);buttonColor2 = findViewById(R.id.buttonColor2);buttonColor3 = findViewById(R.id.buttonColor3);
 
 
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -49,6 +50,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        buttonColor1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getWindow().getDecorView().setBackgroundColor(Color.parseColor("#FFFFFFFF"));
+            }
+        });
+        buttonColor2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getWindow().getDecorView().setBackgroundColor(Color.parseColor("#E453EE"));
+            }
+        });
+        buttonColor3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getWindow().getDecorView().setBackgroundColor(Color.parseColor("#846CAF"));
+            }
+        });
 
     }
 
