@@ -1,8 +1,8 @@
-### <h1> control</h1> 
+### <h1>Table de multiplication</h1> 
 
 cette application 
 Android
- est conçue pour vous permettre d'apprendre  ***control.*** 
+ est conçue pour vous permettre d'apprendre  ***la table de multiplicatin .*** 
 
 Fonctionnalités: 
 
